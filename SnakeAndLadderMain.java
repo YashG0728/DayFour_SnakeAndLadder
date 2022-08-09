@@ -1,10 +1,8 @@
-package UC_5;
-
-import UC_5.SnakeAndLadder;
+package UC_6;
 
 public class SnakeAndLadderMain {
     public static void main(String[] args) {
         SnakeAndLadder obj = new SnakeAndLadder();
-        obj.exactWinnningPosition();
+        obj.numOfDiceThrow();
     }
 }

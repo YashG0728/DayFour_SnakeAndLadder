@@ -1,11 +1,13 @@
-package UC_5;
+package UC_6;
 
 public class SnakeAndLadder {
-    public void exactWinnningPosition() {
+    public void numOfDiceThrow() {
         int winningPosition = 100;
         int playerPosition = 0;
+        int moves=0;
 
         while (playerPosition != winningPosition) {
+            moves++;
 
             int rollTheDie = (int) (Math.floor(Math.random() * 10) % 6) + 1;
             System.out.println("Roll the Dice : " + rollTheDie);
@@ -29,6 +31,6 @@ public class SnakeAndLadder {
                 System.out.println("Snake : " + playerPosition);
             }
         }
+        System.out.println("Number Of Total moves : " +moves);
     }
 }
-
